@@ -22,8 +22,8 @@ def add_cities(cities):
     :param cities: dictionary of cities
     :return: None
     """
-    # TODO: add 2500 Biel
-    # TODO: add 4000 Basel
+    cities['2500'] = 'Biel'  # add 2500 Biel
+    cities['4000'] = 'Basel'  # add 4000 Basel
     print('add_cities:\n', cities)
 
 def remove_cities(cities):
@@ -32,7 +32,7 @@ def remove_cities(cities):
     :param cities: dictionary of cities
     :return: None
     """
-    # TODO: remove the city with the zip-code 8400
+    del cities['8400']  # remove the city with the zip-code 8400
     print('remove_cities:\n', cities)
 
 
@@ -43,9 +43,13 @@ def find_cities(cities):
     :return: None
     """
     print('find_city:')
-    # TODO: print the name of the city with the zip-code 6000
-    # TODO: print the zip-code of Genf
-    pass
+    print(cities['6000'])  # print the name of the city with the zip-code 6000
+
+    # print the zip-code of Genf
+    zipcodes = list(cities.keys())
+    names = list(cities.values())
+    index = names.index('Genf')
+    print(zipcodes[index])
 
 
 def loop_cities(cities):
@@ -55,7 +59,9 @@ def loop_cities(cities):
     :return: None
     """
     print('loop_cities:')
-    # TODO: print all cities in the list. output should be 'zip-code: name', i.e. '3000: Bern'
+    # print all cities in the list. output should be 'zip-code: name', i.e. '3000: Bern'
+    for zipcode, name in cities.items():
+        print(f'{zipcode}: {name}')
 
 
 def sort_cities(cities):
@@ -65,7 +71,9 @@ def sort_cities(cities):
     :return: None
     """
     print('sort_cities:')
-    # TODO: print all cities ordered by zip-Code (descending). output should be 'name: zip-code', i.e. 'Bern: 3000'
+    # print all cities ordered by zipcode (descending). output should be 'name: zip-code', i.e. 'Bern: 3000'
+    for zipcode, name in sorted(cities.items(), reverse=True):
+        print(f'{name}: {zipcode}')
 
 if __name__ == '__main__':
     main()
