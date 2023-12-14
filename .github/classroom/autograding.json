@@ -1,49 +1,9 @@
 {
   "tests": [
     {
-      "name": "lists.add",
+      "name": "test_add",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"lists_test and add\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-     {
-      "name": "lists.remove",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"lists_test and remove\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-     {
-      "name": "lists.find",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"lists_test and find\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-     {
-      "name": "lists.loop",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"lists_test and loop\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-     {
-      "name": "lists.sort",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"lists_test and sort\"",
+      "run": "pytest -v  -k \"test_add\"",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -51,49 +11,39 @@
       "points": 1
     },
     {
-      "name": "dicts.add",
+      "name": "test_remove",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"dicts_test and add\"",
+      "run": "pytest -v  -k \"test_remove\"",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 1
     },
-     {
-      "name": "dicts.remove",
+    {
+      "name": "test_find",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"dicts_test and remove\"",
+      "run": "pytest -v  -k \"test_find\"",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 1
     },
-     {
-      "name": "dicts.find",
+    {
+      "name": "test_loop",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"dicts_test and find\"",
+      "run": "pytest -v  -k \"test_loop\"",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
       "points": 1
     },
-     {
-      "name": "dicts.loop",
+    {
+      "name": "test_sort",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"dicts_test and loop\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-     {
-      "name": "dicts.sort",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -k \"dicts_test and sort\"",
+      "run": "pytest -v  -k \"test_sort\"",
       "input": "",
       "output": "",
       "comparison": "included",
