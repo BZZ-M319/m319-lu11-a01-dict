@@ -1,0 +1,32 @@
+[
+  {
+    "name": "test_add",
+    "function": "test_add",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_remove",
+    "function": "test_remove",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_find",
+    "function": "test_find",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_loop",
+    "function": "test_loop",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_sort",
+    "function": "test_sort",
+    "timeout": 10,
+    "points": 1
+  }
+]
